@@ -4,21 +4,21 @@ services:
   - docker
 
 before_install:
-  - docker build -t wicks/react-test -f ./client/Dockerfile.dev ./client
+  - docker build -t gushtime/react-test -f ./client/Dockerfile.dev ./client
   
 script:
-  - docker run -e CI=true wicks/react-test npm test
+  - docker run -e CI=true gushtime/react-test npm test
 
 after_success:
-  - docker build -t wicks/multi-client ./client
-  - docker build -t wicks/multi-nginx ./nginx
-  - docker build -t wicks/multi-server ./server
-  - docker build -t wicks/multi-worker ./worker
+  - docker build -t gushtime/multi-client ./client
+  - docker build -t gushtime/multi-nginx ./nginx
+  - docker build -t gushtime/multi-server ./server
+  - docker build -t gushtime/multi-worker ./worker
   # Log in to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   
   # Take those images and push them to docker hub
-  - docker push wicks/multi-client
-  - docker push wicks/multi-nginx
-  - docker push wicks/multi-server
-  - docker push wicks/multi-worker
+  - docker push gushtime/multi-client
+  - docker push gushtime/multi-nginx
+  - docker push gushtime/multi-server
+  - docker push gushtime/multi-worker
