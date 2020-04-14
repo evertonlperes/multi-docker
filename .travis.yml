@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t wicks/react-test -f ./client/Dockerfile.dev ./client/Dockerfile.dev ./client
+  - docker build -t wicks/react-test -f ./client/Dockerfile.dev ./client
   
 script:
   - docker run -e CI=true wicks/react-test npm test
