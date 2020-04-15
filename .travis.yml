@@ -22,3 +22,17 @@ after_success:
   - docker push gushtime/multi-nginx
   - docker push gushtime/multi-server
   - docker push gushtime/multi-worker
+
+  # Deploy AWS Settings
+deploy:
+  #edge: true ->> quick fix for bucket_name errors
+  provider: elasticbeanstalk
+  region: us-east-2
+  app: multi-docker
+  env: MultiDocker-env
+  bucket_name: elasticbeanstalk-us-east-2-786566844339
+  bucket_path: docker-multi
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
