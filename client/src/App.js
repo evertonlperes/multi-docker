@@ -12,9 +12,10 @@ class App extends Component {
         <div className="App">
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-title">Welcome to React</h1>
-            <h2>Multi-docker container running through AWS EBeantalk!</h2>
-            <h3>Pega essa patrao :P</h3>
+            <h1 className="App-title">Welcome to React
+            Multi-docker container running through AWS EBeantalk!
+            Pega essa patrao :P
+            </h1>
             <Link to="/">Home</Link>
             <Link to="/otherpage"> Other Page</Link>
           </header>
