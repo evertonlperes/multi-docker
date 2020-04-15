@@ -13,8 +13,10 @@ class App extends Component {
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
             <h1 className="App-title">Welcome to React</h1>
+            <h2>Multi-docker container running through AWS EBeantalk!</h2>
+            <h3>Pega essa patrao :P</h3>
             <Link to="/">Home</Link>
-            <Link to="/otherpage">Other Page</Link>
+            <Link to="/otherpage"> Other Page</Link>
           </header>
           <div>
             <Route exact path="/" component={Fib} />
