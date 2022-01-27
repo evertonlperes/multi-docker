@@ -2,4 +2,4 @@ blank_issues_enabled: false
 contact_links:
   - name: Bug Report
     about: Create a report of the issue you've encountered.
-    url: https://github.com/evertonlperes/multi-docker/issues/new?template=bug_report.md&projects=evertonlperes%2Fmulti-docker%2F1&labels=bug
+    url: https://github.com/evertonlperes/multi-docker/issues/new?template=bug_report.md&projects=evertonlperes%2Fmulti-docker%2F1&milestone=XPTO&labels=bug
