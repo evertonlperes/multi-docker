@@ -1,4 +1,4 @@
-
+name: "bug-template"
 description: Report Rancher Desktop issue
 labels: ["kind/bug"]
 body:
