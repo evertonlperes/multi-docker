@@ -1,4 +1,4 @@
-name: Bug
+name: "THIS ONLY A TEMPLATE"
 description: Report Rancher Desktop issue
 labels: ["kind/bug"]
 body:
