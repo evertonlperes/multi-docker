@@ -2,5 +2,5 @@ blank_issues_enabled: false
 contact_links:
   - name: Bug Report
     about: Create a report of the issue you've encountered.
-    url: https://github.com/evertonlperes/multi-docker/issues/new?template=bug_report.md&projects=evertonlperes%2Ftest%2F1&labels=%3Aant%3A%20bug
+    url: https://github.com/evertonlperes/multi-docker/issues/new?template=BUG_REPORT.md&projects=test-project&labels=%3Aant%3A%20bug
 #    url: https://github.com/Narigo/some-project/issues/new?template=BUG_REPORT.md&projects=Narigo%2Fsome-project%2F1&labels=%3Aant%3A%20bug
