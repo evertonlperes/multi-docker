@@ -1,5 +1,5 @@
 
-name: test
+name: project-bot
 on:
   issues:
     types:
