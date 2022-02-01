@@ -7,7 +7,7 @@ on:
       - opened
       - reopened
 permissions:
-    issues: read
+    issues: write
     repository-projects: write
 jobs:
   add_to_project:
